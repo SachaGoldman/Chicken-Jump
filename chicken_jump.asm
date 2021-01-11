@@ -1,4 +1,5 @@
 #####################################################################
+# Author: Sacha Goldman 
 # Using any display that is 32 by 32 with starting display address o 0x10008000 ($gp)
 #####################################################################
 
@@ -8,7 +9,7 @@ platXs: .space 908 #The horizontal offsets of our platforms
 platHeights: .space 908 #The heights of our platforms
 displayBuffer: .space 4096 #A buffer for our display that we draw to
 displayAddress: .word 0x10008000 #the address of our display in memory
-gravity: .word 0 #Stored in 1/128th pixels per frame^2 (Since a fram is square is a frame squared a four dimensional object?)
+gravity: .word 0 #Stored in 1/128th pixels per frame^2 (Since a frame is square, is a frame squared a four dimensional object?)
 velocity: .word 0 #Stored in 1/128th pixels per frame
 direction: .word 0 #The direction which our character is facsing. 0 for left, 1 for right
 characterHeight: .word 0 #Stored in 1/128th pixels aligned with the bottom of the character
